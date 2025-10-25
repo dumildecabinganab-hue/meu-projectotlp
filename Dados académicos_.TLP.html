@@ -1,0 +1,120 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><form id="formularioDadosPessoais">
+    <h2>Dados Pessoais</h2>
+    
+    <label for="nomeCompleto">Nome Completo:</label>
+    <input type="text" id="nomeCompleto" name="nomeCompleto" required><br><br>
+    
+    <label for="filiacao">Filiação:</label>
+    <input type="text" id="filiacao" name="filiacao" required><br><br>
+    
+    <label for="bilheteIdentidade">Bilhete de Identidade N°:</label>
+    <input type="text" id="bilheteIdentidade" name="bilheteIdentidade" required><br><br>
+    
+    <label for="residencia">Residência:</label>
+    <input type="text" id="residencia" name="residencia" required><br><br>
+    
+    <label for="provincia">Província de:</label>
+    <input type="text" id="provincia" name="provincia" required><br><br>
+    
+    <label for="estadoCivil">Estado Civil:</label>
+    <select id="estadoCivil" name="estadoCivil" required>
+        <option value="">Selecione</option>
+        <option value="solteiro">Solteiro(a)</option>
+        <option value="casado">Casado(a)</option>
+        <option value="divorciado">Divorciado(a)</option>
+        <option value="viuvo">Viúvo(a)</option>
+    </select><br><br>
+    
+    <label for="naturalidade">Natural de:</label>
+    <input type="text" id="naturalidade" name="naturalidade" required><br><br>
+    
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+    </select><br><br>
+    
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura" name="altura" step="0.01" required><br><br>
+    
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+    
+    <label for="emissao">Emitido em:</label>
+    <input type="date" id="emissao" name="emissao" required><br><br>
+    
+    <label for="validade">Válido até:</label>
+    <input type="date" id="validade" name="validade" required><br><br>
+    
+
+</form>
+  
+
+
+
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Formulário de Dados Académicos</title>
+</head>
+<body>
+  <h2>Formulário de Dados Académicos</h2>
+
+  <form action="processar_dados.php" method="post">
+    <!-- Nome completo -->
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <!-- Número do estudante -->
+    <label for="numero">Número de estudante:</label><br>
+    <input type="text" id="numero" name="numero" required><br><br>
+
+    <!-- Curso -->
+    <label for="curso">Curso:</label><br>
+    <input type="text" id="curso" name="curso"><br><br>
+
+    <!-- Ano académico -->
+    <label for="ano">Ano académico:</label><br>
+    <select id="ano" name="ano">
+      <option value="">--Selecione o ano--</option>
+      <option value="1">1º Ano</option>
+      <option value="2">2º Ano</option>
+      <option value="3">3º Ano</option>
+      <option value="4">4º Ano</option>
+    </select><br><br>
+
+    <!-- Turno -->
+    <label>Turno:</label><br>
+    <input type="radio" id="manha" name="turno" value="Manhã">
+    <label for="manha">Manhã</label><br>
+    <input type="radio" id="tarde" name="turno" value="Tarde">
+    <label for="tarde">Tarde</label><br>
+    <input type="radio" id="noite" name="turno" value="Noite">
+    <label for="noite">Noite</label><br><br>
+
+    <!-- Disciplinas preferidas -->
+    <label>DiscOrganização de imprensa iplinas preferidas:</label><br>
+    <input type="checkbox" id="matematica" name="disciplinas" value="Matemática">
+    <label for="matematica">Matemática</label><br>
+    <input type="checkbox" id="IAG" name="disciplinas" value="Física">
+    <label for="IAG">IAG</label><br>
+    <input type="checkbox" id="TLP" name="disciplinas" value="Química">
+    <label for="T.L.P">T.L.P</label><br><br>
+
+    <!-- Observações -->
+    <label for="obs">Observações:</label><br>
+    <textarea id="obs" name="observacoes" rows="4" cols="40"></textarea><br><br>
+
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+  </form>
+</body>
+</html>
+<html></html><script>function myFunction() {
+  alert("Button Clicked")
+}</script>
